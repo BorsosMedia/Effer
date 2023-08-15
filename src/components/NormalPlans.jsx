@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 
 const NormalPlans = ({ TypeOfPlan }) => {
@@ -72,7 +71,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
               case "a":
                 return "https://effercoaching.com/normie-monthly";
               case "b":
-                return "https://effercoaching.com/normie-3-months-ss";
+                return "https://effercoaching.com/normie-3-months";
               case "d":
                 return "https://effercoaching.com/normie-6-months";
               case "e":
@@ -151,7 +150,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
               case "a":
                 return "https://effercoaching.com/ascending-monthly";
               case "b":
-                return "https://effercoaching.com/ascending-3-month-ss";
+                return "https://effercoaching.com/ascending-3-month";
               case "d":
                 return "https://effercoaching.com/ascending-6-month";
               case "e":
@@ -229,7 +228,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
               case "a":
                 return "https://effercoaching.com/srs-bodybuild-monthly";
               case "b":
-                return "https://effercoaching.com/srs-bodybuild-3-months-ss";
+                return "https://effercoaching.com/srs-bodybuild-3-months";
               case "d":
                 return "https://effercoaching.com/srs-bodybuild-6-months";
               case "e":
