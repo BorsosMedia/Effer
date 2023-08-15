@@ -4,6 +4,18 @@
     url("media/fonts/AgencyFB-Bold.ttf") format("truetype");
 }
 
+body::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
 :root {
   font-size: 16px;
   --black-color: #0f0f0f;
@@ -448,9 +460,9 @@
 .summer-offer-ttl {
   color: var(--primary-color);
 }
-.text-act {
+/* .text-act {
   margin-top: 3rem;
-}
+} */
 .summer-prg {
   color: #946868;
   font-size: 1.5rem;
@@ -950,7 +962,7 @@ option {
     width: 50%;
   }
   .plan-toggle {
-    width: 80%;
+    width: 1040px;
     margin: 0 auto;
   }
   .presentation-wrapper {
@@ -1031,7 +1043,7 @@ option {
   .card-wrapper {
     display: flex;
     justify-content: center;
-    column-gap: 4%;
+    column-gap: 2%;
     width: 80%;
     margin: 0 auto;
     flex-wrap: wrap;
@@ -1047,5 +1059,11 @@ option {
   .pricing-container:nth-of-type(2) .paragraph-text,
   .pricing-container .paragraph-text {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card-wrapper {
+    column-gap: 4%;
   }
 }
