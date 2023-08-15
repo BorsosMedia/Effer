@@ -74,7 +74,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
         <ul>
           <li className="card-list">Custom workout regimen and diet</li>
           <li className="card-list">Bi-weekly programming tweaks</li>
-          <li className="card-list">E-mail and text me directly</li>
+          <li className="card-list">E-mail me directly</li>
         </ul>
         <a
           target="_blank"
@@ -166,7 +166,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
         <ul>
           <li className="card-list">Custom workout regimen and diet</li>
           <li className="card-list">Weekly programming tweaks</li>
-          <li className="card-list">E-mail and text me directly</li>
+          <li className="card-list">E-mail me directly</li>
         </ul>
         <a
           target="_blank"
@@ -298,7 +298,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
             <li className="card-list">Custom workout regimen and diet</li>
             <li className="card-list">Unlimited programming tweaks</li>
             <li className="card-list">Posing lessons and prep tips</li>
-            <li className="card-list">E-mail and text me directly</li>
+            <li className="card-list">E-mail me directly</li>
           </ul>
           <a
             target="_blank"
