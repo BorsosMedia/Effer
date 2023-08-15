@@ -21,11 +21,24 @@ const NormalPlans = ({ TypeOfPlan }) => {
         <p className="paragraph-text">
           Custom programming in the most affordable way possible
         </p>
-        {/*  {TypeOfPlan == "b" && (
+        {TypeOfPlan !== "a" && (
           <p className="summer-prg">
-            Before <span className="summer-offer">$300</span>
+            Before{" "}
+            <span className="summer-offer">
+              {(() => {
+                switch (TypeOfPlan) {
+                  case "b":
+                    return "$600 ";
+
+                  case "d":
+                    return "$1200 ";
+                  case "e":
+                    return "$2400 ";
+                }
+              })()}
+            </span>
           </p>
-        )} */}
+        )}
         <h4 className="card-text-price">
           {(() => {
             switch (TypeOfPlan) {
@@ -102,11 +115,24 @@ const NormalPlans = ({ TypeOfPlan }) => {
         <p className="paragraph-text">
           Custom programming with constant feedback and more tweaks
         </p>
-        {/*   {TypeOfPlan == "b" && (
+        {TypeOfPlan !== "a" && (
           <p className="summer-prg">
-            Before <span className="summer-offer">$550</span>
+            Before{" "}
+            <span className="summer-offer">
+              {(() => {
+                switch (TypeOfPlan) {
+                  case "b":
+                    return "$900 ";
+
+                  case "d":
+                    return "$1800 ";
+                  case "e":
+                    return "$3600 ";
+                }
+              })()}
+            </span>
           </p>
-        )} */}
+        )}
         <h4 className="card-text-price">
           {(() => {
             switch (TypeOfPlan) {
@@ -182,11 +208,24 @@ const NormalPlans = ({ TypeOfPlan }) => {
         <p className="paragraph-text">
           Custom programming with constant feedback and prep secrets
         </p>
-        {/*   {TypeOfPlan == "b" && (
+        {TypeOfPlan !== "a" && (
           <p className="summer-prg">
-            Before <span className="summer-offer">$680</span>
+            Before{" "}
+            <span className="summer-offer">
+              {(() => {
+                switch (TypeOfPlan) {
+                  case "b":
+                    return "$1200 ";
+
+                  case "d":
+                    return "$2400 ";
+                  case "e":
+                    return "$4800 ";
+                }
+              })()}
+            </span>
           </p>
-        )} */}
+        )}
         <h4 className="card-text-price">
           {(() => {
             switch (TypeOfPlan) {
