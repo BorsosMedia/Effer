@@ -13,6 +13,9 @@ import NormalPlans from "./components/NormalPlans";
 import DiscordSection from "./components/DiscordSection";
 import BlackFriday from "./components/BlackFriday";
 import SpecialSale from "./components/SpecialSale";
+import InstagramWidget from "./components/InstagramWidget";
+import TiktokWidget from "./components/TiktokWidget";
+import OnetimePlans from "./components/OnetimePlans";
 
 function App() {
   const ref = useRef();
@@ -156,7 +159,7 @@ function App() {
         {/*     <SpecialSale TypeOfPlan={TypeOfPlan} /> */}
         {/* */}
       </section>
-
+      {/*     <OnetimePlans /> */}
       <section className="pricing-container">
         <h2 className="big-text">
           <span className="primary-color-accent">Single</span> Time, Posing
@@ -237,10 +240,18 @@ function App() {
             </p>
           </div>
           <div className="presentation-item-wrapper">
-            <img src={johnCollage} alt="" className="john-collage" />
+            <img
+              src={johnCollage}
+              alt="Collage with photos of John Effer"
+              className="john-collage"
+            />
           </div>
         </div>
       </section>
+      <div className="social-media--widgets">
+        {/*   <TiktokWidget /> */}
+        <InstagramWidget />
+      </div>
       <Footer />
     </div>
   );

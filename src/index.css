@@ -38,6 +38,97 @@ body::-webkit-scrollbar-thumb {
   box-sizing: border-box;
 }
 
+/* Instagram Widget */
+
+.IG-widget--wrapper {
+  margin: 4rem auto 2rem auto;
+  max-width: 1160px;
+  padding-inline: 1rem;
+}
+.iqToXX img {
+  max-height: 400px;
+  max-height: 400px;
+}
+.eapps-instagram-feed-posts-grid-load-more-container.eapps-instagram-feed-posts-grid-load-more-enabled {
+  display: none !important;
+}
+.Tiktok-widget--wrapper {
+  margin: 4rem auto 4rem auto;
+  max-width: 1160px;
+  padding-inline: 1rem;
+}
+/*  */
+
+/* One Time Plans */
+.single-plans--container {
+  max-width: 1409px;
+  margin-inline: auto;
+  margin-bottom: 4rem;
+}
+.plans-container {
+  display: flex;
+  gap: 1rem;
+  margin-inline: auto;
+  flex-direction: column;
+  align-items: center;
+}
+.single-plans--container .big-text {
+  text-align: center;
+  color: var(--white-color);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+.one-time-plan--block {
+  color: var(--white-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 456px;
+
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  gap: 1rem;
+  border-radius: 0.5rem;
+}
+.one-time-plan--block h2 {
+  font-size: 2rem;
+  grid-column: -1/1;
+  letter-spacing: 1px;
+}
+.one-time-plan--block p {
+  grid-column: 1/1;
+  color: #ababab;
+}
+.one-time-plan--block ul {
+  grid-column: 2/2;
+  grid-row: 2/4;
+  display: flex;
+  flex-direction: column;
+  color: #ababab;
+  margin-left: 1.5rem;
+}
+.one-time-plan--block ul li {
+  margin-bottom: 0.5rem;
+}
+.one-time-plan--block h4 {
+  font-size: 2.8rem;
+  grid-column: 1/1;
+  display: flex;
+  align-items: baseline;
+  line-height: 1;
+}
+.one-time-plan--block a {
+  grid-column: -1/1;
+  text-decoration: none;
+  margin-top: 0;
+  border-radius: 0.25rem;
+  font-weight: bold;
+}
+.one-time-plan--block a:hover {
+  background-color: var(--white-color);
+  color: var(--primary-color);
+}
+/*  */
+
 /* Global styles */
 
 .App {
@@ -118,7 +209,9 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 1px;
 }
 
-.paragraph-text {
+.paragraph-text,
+p,
+ul li {
   font-size: 1.15rem;
 }
 .txt-lnks {
@@ -545,6 +638,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .card-container {
+  max-width: 456px;
+  margin-inline: auto;
   position: relative;
   align-self: center;
   margin-top: 2rem;
@@ -931,6 +1026,15 @@ option {
   }
 }
 @media only screen and (min-width: 980px) {
+  .plans-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  /* .social-media--widgets {
+    display: flex;
+    flex-direction: row;
+  } */
   .discord a {
     width: min(17rem, 100%);
   }
@@ -966,7 +1070,7 @@ option {
     margin: 0 auto;
   }
   .presentation-wrapper {
-    width: 80%;
+    max-width: 1160px;
     margin: 0 auto;
     display: flex;
     position: relative;
@@ -1051,6 +1155,8 @@ option {
   .card-container {
     /* width: min(22rem, 100%); */
     flex: 0 1 19rem;
+    max-width: initial;
+    margin-inline: initial;
   }
   .hero-paragraph {
     margin: 0 auto;
