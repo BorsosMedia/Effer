@@ -19,9 +19,9 @@ function OnetimePlans() {
           <p>Get a srs meal plan customized to your goals</p>
           <h4>$200</h4>
           <ul>
-            <li>Specific programming .</li>
-            <li>Results orientated.</li>
-            <li>Tremendous results.</li>
+            <li>Specific programming</li>
+            <li>Results orientated</li>
+            <li>Tremendous results</li>
           </ul>
           <a
             href="https://effercoaching.com/one-time-meal-plan"
@@ -39,9 +39,9 @@ function OnetimePlans() {
           <p>Get a srs training plan customized to your goals</p>
           <h4>$200</h4>
           <ul>
-            <li>Specific programming .</li>
-            <li>Results orientated.</li>
-            <li>Tremendous results.</li>
+            <li>Specific programming</li>
+            <li>Results orientated</li>
+            <li>Tremendous results</li>
           </ul>
           <a
             href="https://effercoaching.com/one-time-training-plan"
@@ -59,9 +59,9 @@ function OnetimePlans() {
           <p>Get srs meals and training plans customized to your goals</p>
           <h4>$350</h4>
           <ul>
-            <li>Specific programming .</li>
-            <li>Results orientated.</li>
-            <li>Tremendous results.</li>
+            <li>Specific programming</li>
+            <li>Results orientated</li>
+            <li>Tremendous results</li>
           </ul>
           <a
             href="https://effercoaching.com/one-time-training-and-meal-plan"
