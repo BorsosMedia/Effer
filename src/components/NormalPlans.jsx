@@ -8,14 +8,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
         <h2
           className={TypeOfPlan == "b" ? "medium-text text-act" : "medium-text"}
         >
-          {(() => {
-            switch (TypeOfPlan) {
-              case "b":
-                return "Normie ";
-              default:
-                return "Normie";
-            }
-          })()}
+          Normie
         </h2>
 
         <p className="paragraph-text">
@@ -103,14 +96,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
         <h2
           className={TypeOfPlan == "b" ? "medium-text text-act" : "medium-text"}
         >
-          {(() => {
-            switch (TypeOfPlan) {
-              case "b":
-                return "Ascending";
-              default:
-                return "Ascending";
-            }
-          })()}
+          Ascending
         </h2>
         <p className="paragraph-text">
           Custom programming with constant feedback and more tweaks
@@ -166,6 +152,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
           <li className="card-list">Custom workout regimen and diet</li>
           <li className="card-list">Weekly programming tweaks</li>
           <li className="card-list">E-mail and text me directly</li>
+          <li className="card-list">FaceTime consult</li>
         </ul>
         <a
           target="_blank"
@@ -195,14 +182,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
         <h2
           className={TypeOfPlan == "b" ? "medium-text text-act" : "medium-text"}
         >
-          {(() => {
-            switch (TypeOfPlan) {
-              case "b":
-                return "Srs - Bodybuild";
-              default:
-                return "Srs - Bodybuild";
-            }
-          })()}
+          Srs - Bodybuild
         </h2>
         <p className="paragraph-text">
           Custom programming with constant feedback and prep secrets
@@ -258,6 +238,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
           <li className="card-list">Unlimited programming tweaks</li>
           <li className="card-list">Posing lessons and prep tips</li>
           <li className="card-list">E-mail and text me directly</li>
+          <li className="card-list">FaceTime consult</li>
         </ul>
         <a
           target="_blank"

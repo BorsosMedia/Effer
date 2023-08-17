@@ -103,8 +103,7 @@ body::-webkit-scrollbar-thumb {
   color: var(--white-color);
   display: grid;
   grid-template-columns: 1fr 1fr;
-
-  max-width: 294px;
+  max-width: 300px;
   background-color: #1a212b;
   padding: 2rem;
   gap: 1rem;
