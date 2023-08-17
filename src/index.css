@@ -53,7 +53,7 @@ body::-webkit-scrollbar-thumb {
   display: none !important;
 }
 .Tiktok-widget--wrapper {
-  margin: 4rem auto 4rem auto;
+  margin: 4rem auto 0 auto;
   max-width: 1160px;
   padding-inline: 1rem;
 }
@@ -66,54 +66,87 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 4rem;
 }
 .plans-container {
-  display: flex;
-  gap: 1rem;
+  display: grid;
+  justify-content: center;
+  gap: 4%;
   margin-inline: auto;
-  flex-direction: column;
-  align-items: center;
+  margin-bottom: 10rem;
 }
 .single-plans--container .big-text {
   text-align: center;
   color: var(--white-color);
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  position: relative;
+}
+.single-plans--container .big-text::after {
+  content: "";
+  width: 8%;
+  background-color: var(--white-color);
+  height: 0.5rem;
+  width: 5rem;
+  position: absolute;
+  bottom: -0.8rem;
+  transform: translate(-50%, 0);
+  left: 50%;
+  border-radius: 1rem;
+}
+.single-plans--container .paragraph-text {
+  text-align: center;
+  color: var(--white-color);
   margin-bottom: 2rem;
-  font-size: 2rem;
 }
 .one-time-plan--block {
   color: var(--white-color);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 456px;
 
-  background-color: var(--secondary-color);
+  max-width: 294px;
+  background-color: #1a212b;
   padding: 2rem;
   gap: 1rem;
   border-radius: 0.5rem;
+  box-shadow: rgb(255 255 255 / 30%) 0px 5px 15px 0px;
 }
 .one-time-plan--block h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   grid-column: -1/1;
   letter-spacing: 1px;
+  text-align: center;
+  color: #d5d5d5;
+  text-wrap: balance;
+  display: flex;
+  align-items: end;
+  justify-content: center;
 }
 .one-time-plan--block p {
-  grid-column: 1/1;
-  color: #ababab;
+  grid-column: -1/1;
+  text-align: center;
+  color: #818891;
+  text-wrap: balance;
 }
 .one-time-plan--block ul {
-  grid-column: 2/2;
-  grid-row: 2/4;
+  grid-column: -1/1;
+
   display: flex;
   flex-direction: column;
   color: #ababab;
-  margin-left: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .one-time-plan--block ul li {
   margin-bottom: 0.5rem;
 }
 .one-time-plan--block h4 {
-  font-size: 2.8rem;
-  grid-column: 1/1;
+  font-size: 3.1rem;
+  grid-column: -1/1;
+  text-align: center;
+  color: #d5d5d5;
+  /* display: flex;
+  justify-content: ;
   display: flex;
-  align-items: baseline;
+  align-items: baseline; */
   line-height: 1;
 }
 .one-time-plan--block a {
@@ -122,10 +155,12 @@ body::-webkit-scrollbar-thumb {
   margin-top: 0;
   border-radius: 0.25rem;
   font-weight: bold;
-}
-.one-time-plan--block a:hover {
   background-color: var(--white-color);
   color: var(--primary-color);
+}
+.one-time-plan--block a:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
 }
 /*  */
 
@@ -576,13 +611,13 @@ ul li {
   flex-direction: column;
   position: relative;
 }
-.pricing-container:nth-of-type(2) {
+.pricing-container:nth-of-type(3) {
   background-color: var(--primary-color) !important;
 }
-.pricing-container:nth-of-type(2) .primary-color-accent {
+.pricing-container:nth-of-type(3) .primary-color-accent {
   color: var(--white-color);
 }
-.pricing-container:nth-of-type(2) .big-text::after {
+.pricing-container:nth-of-type(3) .big-text::after {
   background-color: var(--white-color);
 }
 .pricing-container .big-text {
@@ -591,17 +626,18 @@ ul li {
   font-size: 3rem;
 
   padding: 0 1rem;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
   color: var(--white-color);
 }
 
-.pricing-container:nth-of-type(2) .card-container {
+.pricing-container:nth-of-type(3) .card-container {
   margin-top: 1rem;
 }
-.pricing-container:nth-of-type(2) .card-container .BF-deal {
+.pricing-container:nth-of-type(3) .card-container .BF-deal {
   padding: 0 10% 0 0;
 }
-.pricing-container .big-text:nth-of-type(2) {
+.pricing-container .big-text:nth-of-type(3) {
   margin-top: 3rem;
   margin-bottom: 1rem;
   font-size: 2rem;
@@ -657,8 +693,11 @@ ul li {
   /*  min-height: 27rem; */
   border-radius: 0.5rem;
   transition: var(--transition);
+  outline: 1px solid var(--primary-color);
 }
-
+.pricing-container:nth-of-type(1) .card-container {
+  box-shadow: rgb(211 49 49 / 60%) 0px 5px 15px 0px;
+}
 .black-friday-card {
   background-color: var(--secondary-color);
   padding: 6rem 1rem 2rem !important;
@@ -1027,9 +1066,8 @@ option {
 }
 @media only screen and (min-width: 980px) {
   .plans-container {
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
+    display: flex;
+    margin-bottom: 4rem;
   }
   /* .social-media--widgets {
     display: flex;
@@ -1070,7 +1108,7 @@ option {
     margin: 0 auto;
   }
   .presentation-wrapper {
-    max-width: 1160px;
+    max-width: 1222px;
     margin: 0 auto;
     display: flex;
     position: relative;

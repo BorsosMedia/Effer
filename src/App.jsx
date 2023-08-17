@@ -159,7 +159,7 @@ function App() {
         {/*     <SpecialSale TypeOfPlan={TypeOfPlan} /> */}
         {/* */}
       </section>
-      {/*     <OnetimePlans /> */}
+      <OnetimePlans />
       <section className="pricing-container">
         <h2 className="big-text">
           <span className="primary-color-accent">Single</span> Time, Posing
@@ -229,6 +229,7 @@ function App() {
           <img src={background} alt="" />
         </div>
         <DiscordSection />
+
         <div className="presentation-wrapper">
           <div className="presentation-item">
             <h2 className="big-text">Only The Objective Is What Matters</h2>
@@ -248,10 +249,10 @@ function App() {
           </div>
         </div>
       </section>
-      <div className="social-media--widgets">
-        {/*   <TiktokWidget /> */}
-        <InstagramWidget />
-      </div>
+
+      <TiktokWidget />
+      <InstagramWidget />
+
       <Footer />
     </div>
   );
