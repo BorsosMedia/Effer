@@ -92,9 +92,12 @@ body::-webkit-scrollbar-thumb {
   border-radius: 1rem;
 }
 .single-plans--container .paragraph-text {
-  text-align: center;
+  text-align: left;
   color: var(--white-color);
   margin-bottom: 2rem;
+  margin-inline: auto;
+  width: fit-content;
+  padding-inline: 1rem;
 }
 .one-time-plan--block {
   color: var(--white-color);

@@ -7,7 +7,8 @@ function OnetimePlans() {
         <span className="primary-color-accent">One Time</span> Custom Plans
       </h2>
       <p className="paragraph-text">
-      Let me provide you with all the resources so you can reach your fitness goals
+        Let me provide you with all the resources so you can reach your fitness
+        goals.
       </p>
       <div className="plans-container">
         <div className="one-time-plan--block">
