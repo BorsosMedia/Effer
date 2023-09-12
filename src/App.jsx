@@ -83,7 +83,7 @@ function App() {
             target="_blank"
             className="button FI--button-lg"
           >
-            Try Now
+            Start Your Free 7-Day Trial
           </a>
         </div>
         <div className="FI--desc-block">
@@ -96,7 +96,7 @@ function App() {
             </ul>
           </div>
           <a href="" className="button FI--button-sm">
-            Try Now
+            Start Your Free 7-Day Trial
           </a>
         </div>
       </section>
