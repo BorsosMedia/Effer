@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import Header from "./components/Header";
 import { IoIosFitness } from "react-icons/io";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import { TbChristmasTree } from "react-icons/tb";
+import FIPreview from "./media/fi-preview.png";
 import Footer from "./components/Footer";
 import background from "./media/presentation-background.png";
 import johnCollage from "./media/john-collage.png";
@@ -63,6 +63,43 @@ function App() {
           </div>
         </div>
       </main>
+
+      <section className="FI--section-block">
+        <div>
+          <h1>
+            Where’s Your <br />
+            <span>
+              FEROCIOUS <br />
+              <span>INTENSITY?</span>
+            </span>
+          </h1>
+          <p className="FI--text">
+            You thought you knew srs training? We're going to go{" "}
+            <span className="primary-color-accent">FULL THROTTLE</span> with a
+            new ferociously intense workout everyday.
+          </p>
+          <a
+            href="https://www.ferociousintensity.com/"
+            target="_blank"
+            className="button FI--button-lg"
+          >
+            Try Now
+          </a>
+        </div>
+        <div className="FI--desc-block">
+          <img src={FIPreview} alt="" className="fi--preview-mock" />
+          <div>
+            <h5>Daily Routine:</h5>
+            <ul>
+              <li>$6 /Month</li>
+              <li>$60 /Year</li>
+            </ul>
+          </div>
+          <a href="" className="button FI--button-sm">
+            Try Now
+          </a>
+        </div>
+      </section>
 
       <section className="pricing-container">
         {/*         <h4 className="black-friday-heading">Black Friday Sale Ends In:</h4>
