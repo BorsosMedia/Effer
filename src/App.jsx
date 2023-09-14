@@ -95,7 +95,10 @@ function App() {
               <li>$60 /Year</li>
             </ul>
           </div>
-          <a href="" className="button FI--button-sm">
+          <a
+            href="https://www.ferociousintensity.com/"
+            className="button FI--button-sm"
+          >
             Start Your Free 7-Day Trial
           </a>
         </div>
