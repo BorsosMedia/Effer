@@ -1246,6 +1246,7 @@ option {
     padding: 0;
   }
   .presentation-container .paragraph-text {
+    text-wrap: balance;
     width: 75%;
   }
   .presentation-item-wrapper {
@@ -1332,6 +1333,9 @@ option {
 }
 
 @media screen and (min-width: 1440px) {
+  .pricing-container .paragraph-text:not(.card-container .paragraph-text) {
+    width: 45%;
+  }
   .john-crop {
     height: 140%;
   }
