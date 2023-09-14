@@ -111,8 +111,8 @@ function App() {
         </h2>
         <p className="paragraph-text hero-paragraph">
           <span className="primary-color-accent">Effer Coaching</span> is a
-          fully customized plan, workout regiment, and direct support me during
-          weekly check-ins with updates on your progress.
+          fully customized plan, workout regiment, and direct support from me
+          during weekly check-ins with updates on your progress.
           <br />
           <br />
           Additionally, the higher tier plans allow you to connect with me
