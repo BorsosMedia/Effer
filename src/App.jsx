@@ -61,7 +61,7 @@ function App() {
             </p>
             <button onClick={handleCTA} className="button">
               <IoIosFitness className="icon" />
-              Go Now!
+              Go Now
             </button>
           </div>
         </div>
