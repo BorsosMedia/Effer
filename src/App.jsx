@@ -52,13 +52,16 @@ function App() {
         <div className="hero-container">
           <div className="hero-text">
             <h1 className="heading-text">
-              It’s Time <br />
-              <span>To Get</span>
-              <br /> <span>Srs</span> {/* Ready to get buffed up? */}
+              Srs Olympia <span>Sale</span>
+              <br />
+              <span>50% OFF!</span>
             </h1>
+            <p>
+              EVERYTHING at half price until <span>Nov. 2nd</span>
+            </p>
             <button onClick={handleCTA} className="button">
               <IoIosFitness className="icon" />
-              Get started
+              Go Now!
             </button>
           </div>
         </div>
@@ -210,14 +213,14 @@ function App() {
           it properly? Presentation makes all the difference!
         </p>
 
-        <div className="card-wrapper">
-          <div className="card-container">
+        <div className="card-wrapper ">
+          <div className="card-container posing-card">
+            <div className="item-price">50% OFF!</div>
             <h2 className="medium-text">20-minute posing session</h2>
-            {/*  <p className="BF-deal">
-              Before <br /> 
-              <span>$50</span>
-            </p> */}
-            <h4 className="card-text-price">$50</h4>
+            <p className="BF-deal">
+              Before <span>$50</span>
+            </p>
+            <h4 className="card-text-price">$25</h4>
             <ul>
               <li className="card-list">One-on-one session</li>
               <li className="card-list">Learn how to pose properly</li>
@@ -236,13 +239,17 @@ function App() {
             </a>
           </div>
 
-          <div className="card-container">
+          <div className="card-container posing-card">
+            <div className="item-price">50% OFF!</div>
             <h2 className="medium-text">40-minute posing session</h2>
             {/*  <p className="BF-deal">
               Before <br />
               <span>$90</span>
             </p> */}
-            <h4 className="card-text-price">$90</h4>
+            <p className="BF-deal">
+              Before <span>$90</span>
+            </p>
+            <h4 className="card-text-price">$45</h4>
             <ul>
               <li className="card-list">One-on-one session</li>
               <li className="card-list">Learn the principles of posing</li>

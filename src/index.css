@@ -100,10 +100,12 @@ body::-webkit-scrollbar-thumb {
   padding-inline: 1rem;
 }
 .one-time-plan--block {
+  max-width: 400px;
+  position: relative;
+  padding-top: 5rem !important;
   color: var(--white-color);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 300px;
   background-color: #1a212b;
   padding: 2rem;
   gap: 1rem;
@@ -220,13 +222,25 @@ body::-webkit-scrollbar-thumb {
   font-weight: 900;
 }
 
-.heading-text span:nth-of-type(1) {
-  position: relative;
-  color: #ffff;
+.hero-section .button {
+  margin-top: 0;
 }
 
+.heading-text span:nth-of-type(1) {
+  color: var(--white-color);
+  display: none;
+}
 .heading-text span:nth-of-type(2) {
   color: var(--primary-color);
+}
+.hero-text p {
+  color: #ffffff;
+  text-align: left;
+  width: 100%;
+  margin: 1rem 0;
+}
+.hero-text p span {
+  font-weight: 700;
 }
 
 .big-text {
@@ -332,7 +346,8 @@ ul li {
   bottom: 0;
   right: 0;
   z-index: 2;
-  transform: translate(30%, 0);
+  transform: translate(35%, 0);
+  opacity: 0.85;
 }
 .maskImg {
   position: absolute;
@@ -590,6 +605,12 @@ ul li {
 .summer-offer-ttl {
   color: var(--primary-color);
 }
+.posing-card .BF-deal {
+  padding: 0;
+}
+.card-container.posing-card {
+  outline: none;
+}
 /* .text-act {
   margin-top: 3rem;
 } */
@@ -738,7 +759,7 @@ ul li {
 }
 
 .card-container {
-  max-width: 456px;
+  max-width: 400px;
   margin-inline: auto;
   position: relative;
   align-self: center;
@@ -758,6 +779,7 @@ ul li {
   border-radius: 0.5rem;
   transition: var(--transition);
   outline: 1px solid var(--primary-color);
+  padding-top: 5rem;
 }
 .pricing-container:nth-of-type(1) .card-container {
   box-shadow: rgb(211 49 49 / 60%) 0px 5px 15px 0px;
@@ -798,7 +820,7 @@ black-friday-wrapper {
 }
 .item-price {
   position: absolute;
-  background-color: var(--primary-color-darkened);
+  background-color: var(--primary-color);
   height: 61px;
   display: grid;
   place-content: center;
@@ -1129,6 +1151,12 @@ option {
   }
 }
 @media only screen and (min-width: 580px) {
+  .heading-text span:nth-of-type(1) {
+    display: inline-block;
+  }
+  .john-crop {
+    opacity: 1;
+  }
   .FI--section-block {
     max-width: 600px;
     margin-inline: auto;
@@ -1145,6 +1173,9 @@ option {
   }
 }
 @media only screen and (min-width: 980px) {
+  .one-time-plan--block {
+    max-width: 300px;
+  }
   .FI--text {
     max-width: 90%;
     margin-left: auto;
@@ -1247,7 +1278,7 @@ option {
   }
   .presentation-container .paragraph-text {
     text-wrap: balance;
-    width: 75%;
+    width: 69%;
   }
   .presentation-item-wrapper {
     position: absolute;
