@@ -115,7 +115,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
           {(() => {
             switch (TypeOfPlan) {
               case "a":
-                return "$150 ";
+                return "$200 ";
               case "b":
                 return "$440 ";
 
