@@ -3,9 +3,17 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 const NormalPlans = ({ TypeOfPlan }) => {
   return (
     <div className={TypeOfPlan === "bf" ? "card-hidden" : "card-wrapper"}>
-      <div className={TypeOfPlan === "c" ? "card-hidden" : "card-container"}>
+      <div
+        className={
+          TypeOfPlan === "c"
+            ? "card-hidden"
+            : TypeOfPlan == "b"
+            ? "card-container card-offer-active"
+            : "card-container"
+        }
+      >
         {/*  {TypeOfPlan == "b" && <div className="item-price">20% OFF!</div>} */}
-        <div className="item-price">50% OFF!</div>
+        {TypeOfPlan == "b" && <div className="item-price">20% OFF!</div>}
         <h2
           className={TypeOfPlan == "b" ? "medium-text text-act" : "medium-text"}
         >
@@ -15,25 +23,11 @@ const NormalPlans = ({ TypeOfPlan }) => {
         <p className="paragraph-text">
           Custom programming in the most affordable way possible
         </p>
-
-        <p className="summer-prg">
-          Before{" "}
-          <span className="summer-offer">
-            {(() => {
-              switch (TypeOfPlan) {
-                case "a":
-                  return "$200";
-                case "b":
-                  return "$500";
-
-                case "d":
-                  return "$1000";
-                case "e":
-                  return "$1500 ";
-              }
-            })()}
-          </span>
-        </p>
+        {TypeOfPlan == "b" && (
+          <p className="summer-prg">
+            Before <span className="summer-offer">$300</span>
+          </p>
+        )}
 
         <h4 className="card-text-price">
           {(() => {
@@ -41,12 +35,12 @@ const NormalPlans = ({ TypeOfPlan }) => {
               case "a":
                 return "$100 ";
               case "b":
-                return "$250 ";
+                return "$240 ";
 
               case "d":
-                return "$500 ";
+                return "$600 ";
               case "e":
-                return "$750 ";
+                return "$1200 ";
             }
           })()}
           <span className="price-description">
@@ -91,9 +85,17 @@ const NormalPlans = ({ TypeOfPlan }) => {
         </a>
       </div>
 
-      <div className={TypeOfPlan === "c" ? "card-hidden" : "card-container"}>
+      <div
+        className={
+          TypeOfPlan === "c"
+            ? "card-hidden"
+            : TypeOfPlan == "b"
+            ? "card-container card-offer-active"
+            : "card-container"
+        }
+      >
         {/* {TypeOfPlan == "b" && <div className="item-price">20% OFF!</div>} */}
-        <div className="item-price">50% OFF!</div>
+        {TypeOfPlan == "b" && <div className="item-price">20% OFF!</div>}
         <h2
           className={TypeOfPlan == "b" ? "medium-text text-act" : "medium-text"}
         >
@@ -103,23 +105,11 @@ const NormalPlans = ({ TypeOfPlan }) => {
           Custom programming with constant feedback and more tweaks
         </p>
 
-        <p className="summer-prg">
-          Before{" "}
-          <span className="summer-offer">
-            {(() => {
-              switch (TypeOfPlan) {
-                case "a":
-                  return "$300 ";
-                case "b":
-                  return "$800 ";
-                case "d":
-                  return "$1500 ";
-                case "e":
-                  return "$2500 ";
-              }
-            })()}
-          </span>
-        </p>
+        {TypeOfPlan == "b" && (
+          <p className="summer-prg">
+            Before <span className="summer-offer">$550</span>
+          </p>
+        )}
 
         <h4 className="card-text-price">
           {(() => {
@@ -127,12 +117,12 @@ const NormalPlans = ({ TypeOfPlan }) => {
               case "a":
                 return "$150 ";
               case "b":
-                return "$400 ";
+                return "$440 ";
 
               case "d":
-                return "$750 ";
+                return "$1000 ";
               case "e":
-                return "$1250 ";
+                return "$1950 ";
             }
           })()}
           <span className="price-description">
@@ -178,9 +168,17 @@ const NormalPlans = ({ TypeOfPlan }) => {
         </a>
       </div>
 
-      <div className={TypeOfPlan === "c" ? "card-hidden" : "card-container"}>
+      <div
+        className={
+          TypeOfPlan === "c"
+            ? "card-hidden"
+            : TypeOfPlan == "b"
+            ? "card-container card-offer-active"
+            : "card-container"
+        }
+      >
         {/*  {TypeOfPlan == "b" && <div className="item-price">20% OFF!</div>} */}
-        <div className="item-price">50% OFF!</div>
+        {TypeOfPlan == "b" && <div className="item-price">20% OFF!</div>}
         <h2
           className={TypeOfPlan == "b" ? "medium-text text-act" : "medium-text"}
         >
@@ -190,36 +188,23 @@ const NormalPlans = ({ TypeOfPlan }) => {
           Custom programming with constant feedback and prep secrets
         </p>
 
-        <p className="summer-prg">
-          Before{" "}
-          <span className="summer-offer">
-            {(() => {
-              switch (TypeOfPlan) {
-                case "a":
-                  return "$400 ";
-                case "b":
-                  return "$1000 ";
-
-                case "d":
-                  return "$2000 ";
-                case "e":
-                  return "$3500 ";
-              }
-            })()}
-          </span>
-        </p>
+        {TypeOfPlan == "b" && (
+          <p className="summer-prg">
+            Before <span className="summer-offer">$750</span>
+          </p>
+        )}
 
         <h4 className="card-text-price">
           {(() => {
             switch (TypeOfPlan) {
               case "a":
-                return "$200 ";
+                return "$275 ";
               case "b":
-                return "$500 ";
+                return "$600 ";
               case "d":
-                return "$1000 ";
+                return "$1450 ";
               case "e":
-                return "$1750 ";
+                return "$2550 ";
             }
           })()}
           <span className="price-description">
@@ -268,7 +253,6 @@ const NormalPlans = ({ TypeOfPlan }) => {
 
       {TypeOfPlan === "c" && (
         <div className="card-container">
-          <div className="item-price">50% OFF!</div>
           <h2 className="medium-text">
             16-Week <br /> Contest Prep
           </h2>
@@ -276,12 +260,9 @@ const NormalPlans = ({ TypeOfPlan }) => {
           <p className="paragraph-text">
             Custom programming in the most affordable way possible
           </p>
-          <p className="summer-prg">
-            Before <span className="summer-offer">$1500</span>
-          </p>
+
           <h4 className="card-text-price">
-            $750
-            <span className="price-description"> /16-weeks</span>
+            $900 <span className="price-description"> /16-weeks</span>
           </h4>
           <ul>
             <li className="card-list">Custom workout regimen and diet</li>

@@ -12,17 +12,14 @@ function OnetimePlans() {
       </p>
       <div className="plans-container">
         <div className="one-time-plan--block">
-          <div className="item-price">50% OFF!</div>
           <h2 className="medium-text">
             One Time <br />
             Meal Plan
           </h2>
           <p>Get a srs meal plan customized to your goals</p>
-          <p className="summer-prg">
-            Before <span className="summer-offer">$200</span>
-          </p>
+          <p className="summer-prg"></p>
 
-          <h4>$100</h4>
+          <h4>$150</h4>
           <ul>
             <li>Specific programming</li>
             <li>Results orientated</li>
@@ -37,16 +34,13 @@ function OnetimePlans() {
           </a>
         </div>
         <div className="one-time-plan--block">
-          <div className="item-price">50% OFF!</div>
           <h2 className="medium-text">
             One Time <br />
             Training Plan
           </h2>
           <p>Get a srs training plan customized to your goals</p>
-          <p className="summer-prg">
-            Before <span className="summer-offer">$200</span>
-          </p>
-          <h4>$100</h4>
+          <p className="summer-prg"></p>
+          <h4>$150</h4>
           <ul>
             <li>Specific programming</li>
             <li>Results orientated</li>
@@ -61,17 +55,14 @@ function OnetimePlans() {
           </a>
         </div>
         <div className="one-time-plan--block">
-          <div className="item-price">50% OFF!</div>
           <h2 className="medium-text">
             One Time
             <br /> Training & Meal Plan
           </h2>
           <p>Get srs meals and training plans customized to your goals</p>
-          <p className="summer-prg">
-            Before <span className="summer-offer">$300</span>
-          </p>
+          <p className="summer-prg"></p>
 
-          <h4>$175</h4>
+          <h4>$250</h4>
           <ul>
             <li>Specific programming</li>
             <li>Results orientated</li>

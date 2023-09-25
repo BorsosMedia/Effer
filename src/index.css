@@ -102,7 +102,6 @@ body::-webkit-scrollbar-thumb {
 .one-time-plan--block {
   max-width: 400px;
   position: relative;
-  padding-top: 5rem !important;
   color: var(--white-color);
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -779,6 +778,8 @@ ul li {
   border-radius: 0.5rem;
   transition: var(--transition);
   outline: 1px solid var(--primary-color);
+}
+.card-container.card-offer-active {
   padding-top: 5rem;
 }
 .pricing-container:nth-of-type(1) .card-container {

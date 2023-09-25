@@ -39,7 +39,7 @@ function App() {
   */
 
   /* Hacer un justify content abajo del boton de CTA con lo que ofrece John */
-  const [TypeOfPlan, setTypeOfPlan] = useState("a");
+  const [TypeOfPlan, setTypeOfPlan] = useState("b");
 
   return (
     <div className="App">
@@ -52,13 +52,15 @@ function App() {
         <div className="hero-container">
           <div className="hero-text">
             <h1 className="heading-text">
-              Srs Olympia <span>Sale</span>
+              Srs <span>Sale</span>
               <br />
-              <span>50% OFF!</span>
+              3-Month Plans
+              <br />
+              <span>20% OFF!</span>
             </h1>
-            <p>
+            {/*  <p>
               EVERYTHING at half price until <span>Nov. 2nd</span>
-            </p>
+            </p> */}
             <button onClick={handleCTA} className="button">
               <IoIosFitness className="icon" />
               Go Now
@@ -128,7 +130,7 @@ function App() {
         </p>
 
         <h2 className="big-text" ref={ref}>
-          Payment Plans
+          Srs Sale
         </h2>
         {/*       <h2 className="big-text">Purchase now, start whenever you want!</h2> */}
         <div className="plan-toggle">
@@ -215,17 +217,16 @@ function App() {
 
         <div className="card-wrapper ">
           <div className="card-container posing-card">
-            <div className="item-price">50% OFF!</div>
             <h2 className="medium-text">20-minute posing session</h2>
-            <p className="BF-deal">
+            {/*    <p className="BF-deal">
               Before <span>$50</span>
-            </p>
-            <h4 className="card-text-price">$25</h4>
+            </p> */}
+            <h4 className="card-text-price">$50</h4>
             <ul>
               <li className="card-list">One-on-one session</li>
               <li className="card-list">Learn how to pose properly</li>
               <li className="card-list">
-                20-minutes session (Better for advanced athletes)
+                $-minutes session (Better for advanced athletes)
               </li>
             </ul>
             <a
@@ -240,16 +241,15 @@ function App() {
           </div>
 
           <div className="card-container posing-card">
-            <div className="item-price">50% OFF!</div>
             <h2 className="medium-text">40-minute posing session</h2>
             {/*  <p className="BF-deal">
               Before <br />
               <span>$90</span>
             </p> */}
-            <p className="BF-deal">
+            {/*    <p className="BF-deal">
               Before <span>$90</span>
-            </p>
-            <h4 className="card-text-price">$45</h4>
+            </p> */}
+            <h4 className="card-text-price">$90</h4>
             <ul>
               <li className="card-list">One-on-one session</li>
               <li className="card-list">Learn the principles of posing</li>
