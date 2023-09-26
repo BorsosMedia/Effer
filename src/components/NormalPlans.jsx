@@ -105,11 +105,30 @@ const NormalPlans = ({ TypeOfPlan }) => {
           Custom programming with constant feedback and more tweaks
         </p>
 
-        {TypeOfPlan == "b" && (
-          <p className="summer-prg">
-            Before <span className="summer-offer">$550</span>
-          </p>
-        )}
+        {(() => {
+          switch (TypeOfPlan) {
+            case "a":
+              return null;
+            case "b":
+              return (
+                <p className="summer-prg">
+                  Before <span className="summer-offer">$750</span>
+                </p>
+              );
+            case "d":
+              return (
+                <p className="summer-prg">
+                  Before <span className="summer-offer">$1200</span>
+                </p>
+              );
+            case "e":
+              return (
+                <p className="summer-prg">
+                  Before <span className="summer-offer">$2400</span>
+                </p>
+              );
+          }
+        })()}
 
         <h4 className="card-text-price">
           {(() => {
@@ -188,11 +207,34 @@ const NormalPlans = ({ TypeOfPlan }) => {
           Custom programming with constant feedback and prep secrets
         </p>
 
-        {TypeOfPlan == "b" && (
-          <p className="summer-prg">
-            Before <span className="summer-offer">$750</span>
-          </p>
-        )}
+        {(() => {
+          switch (TypeOfPlan) {
+            case "a":
+              return null;
+            case "b":
+              return (
+                <p className="summer-prg">
+                  Before <span className="summer-offer">$750</span>
+                </p>
+              );
+            case "d":
+              return (
+                <p className="summer-prg">
+                  Before <span className="summer-offer">$1650</span>
+                </p>
+              );
+            case "e":
+              return (
+                <p className="summer-prg">
+                  Before <span className="summer-offer">$3300</span>
+                </p>
+              );
+          }
+        })()}
+
+        {/*   {TypeOfPlan == "b" && (
+          
+        )} */}
 
         <h4 className="card-text-price">
           {(() => {
