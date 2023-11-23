@@ -377,6 +377,8 @@ ul li {
   position: relative;
   justify-content: space-between;
   align-items: center;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
 }
 .logo-container {
   height: 3rem;
