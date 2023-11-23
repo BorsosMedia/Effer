@@ -112,7 +112,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
             case "b":
               return (
                 <p className="summer-prg">
-                  Before <span className="summer-offer">$750</span>
+                  Before <span className="summer-offer">$550</span>
                 </p>
               );
             case "d":
