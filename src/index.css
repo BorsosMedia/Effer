@@ -1595,6 +1595,9 @@ option {
 }
 
 @media screen and (min-width: 1440px) {
+  .stand h3 {
+    font-size: 1.5rem;
+  }
   .nys-block {
     max-width: 1170px;
     margin-inline: auto;

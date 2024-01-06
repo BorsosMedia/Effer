@@ -102,7 +102,7 @@ function App() {
           </div>
           <div className="third-place stand">
             <h5 className="colored-white regular">3rd Place:</h5>
-            <h3 className="colored-white">Free Year of FI</h3>
+            <h3 className="colored-white">Free Year of Ferocious Intensity</h3>
           </div>
         </div>
         <p className="hidden-sm-lg colored-white bold">
