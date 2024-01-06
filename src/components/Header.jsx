@@ -82,9 +82,7 @@ const Header = () => {
           className={
             animateMenu ? "menu-overlay overlay-active" : "menu-overlay"
           }
-        >
-          {" "}
-        </div>
+        ></div>
         <ul
           className={
             animateMenu ? "menu-container menu-active" : "menu-container"

@@ -19,8 +19,12 @@ import OnetimePlans from "./components/OnetimePlans";
 
 function App() {
   const ref = useRef();
+  const nysRef = useRef();
   const handleCTA = () => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
+  const handleNYS = () => {
+    nysRef.current?.scrollIntoView({ behavior: "smooth" });
   };
   /* las personas que entren al website ya sabran de el, tendran informacion previa sobre lo 
   que hace, 2 step order form
@@ -52,22 +56,63 @@ function App() {
         <div className="hero-container">
           <div className="hero-text">
             <h1 className="heading-text">
-              Srs <span>Sale</span>
+              New Year,
               <br />
-              3-Month Plans
-              <br />
-              <span>20% OFF!</span>
+              Srs Challenge
             </h1>
-            {/*  <p>
-              EVERYTHING at half price until <span>Nov. 2nd</span>
-            </p> */}
-            <button onClick={handleCTA} className="button">
+            <p>
+              Win up to <span className="bold">$1000</span>, Free Year of
+              Coaching, <br />
+              and an Annual Ferocious Intensity Membership
+            </p>
+            <button onClick={handleNYS} className="button ">
               <IoIosFitness className="icon" />
               Go Now
             </button>
           </div>
         </div>
       </main>
+
+      <section className="nys-block" ref={nysRef}>
+        <h2 className="colored-white uppercase heading-big">
+          SRS Body Transformation
+          <br />
+          <span className="colored-primary">Challenge 2024!</span>
+        </h2>
+        <p className="colored-white">
+          I’m currently hosting a challenge for every person that signs up to
+          any of my coaching plans in January. The challenge is simple: you just
+          need to put your tears, sweat, and blood into making the most amazing
+          body transformation in 3 months!
+        </p>
+        <div className="h-justify-between">
+          <p className="colored-white bold">Starts at February 1st</p>
+          <p className="colored-white bold">Ends at May 1st, 2024</p>
+        </div>
+        <div className="stands-container">
+          <div className="first-place stand">
+            <div>
+              <h5 className="colored-white regular">1st Place:</h5>
+              <h3 className="colored-white">$1000 in Cash</h3>
+            </div>
+          </div>
+          <div className="second-place stand">
+            <h5 className="colored-white regular">2nd Place:</h5>
+            <h3 className="colored-white">Free Year of Coaching</h3>
+          </div>
+          <div className="third-place stand">
+            <h5 className="colored-white regular">3rd Place:</h5>
+            <h3 className="colored-white">Free Year of FI</h3>
+          </div>
+        </div>
+        <p className="hidden-sm-lg colored-white bold">
+          Are You Up for <br />
+          the Challenge?
+        </p>
+        <button className="button bold hidden-lg" onClick={handleCTA}>
+          Start The Challenge
+        </button>
+      </section>
 
       <section className="FI--section-block">
         <div>
