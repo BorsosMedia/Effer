@@ -231,7 +231,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .hero-section .button {
-  margin-top: 1rem;
+  margin-top: 0;
 }
 
 .heading-text span:nth-of-type(1) {
