@@ -69,46 +69,6 @@ function App() {
         </div>
       </main>
 
-      <section className="FI--section-block">
-        <div>
-          <h1>
-            Where’s Your <br />
-            <span>
-              FEROCIOUS <br />
-              <span>INTENSITY?</span>
-            </span>
-          </h1>
-          <p className="FI--text">
-            You thought you knew srs training? We're going to go{" "}
-            <span className="primary-color-accent">FULL THROTTLE</span> with a
-            new ferociously intense workout everyday.
-          </p>
-          <a
-            href="https://www.ferociousintensity.com/"
-            target="_blank"
-            className="button FI--button-lg"
-          >
-            Start Your Free 7-Day Trial
-          </a>
-        </div>
-        <div className="FI--desc-block">
-          <img src={FIPreview} alt="" className="fi--preview-mock" />
-          <div>
-            <h5>Daily Routine:</h5>
-            <ul>
-              <li>$6 /Month</li>
-              <li>$60 /Year</li>
-            </ul>
-          </div>
-          <a
-            href="https://www.ferociousintensity.com/"
-            className="button FI--button-sm"
-          >
-            Start Your Free 7-Day Trial
-          </a>
-        </div>
-      </section>
-
       <section className="pricing-container">
         {/*         <h4 className="black-friday-heading">Black Friday Sale Ends In:</h4>
         <Timer /> */}
@@ -205,6 +165,47 @@ function App() {
         {/* */}
       </section>
       <OnetimePlans />
+
+      <section className="FI--section-block">
+        <div>
+          <h1>
+            Where’s Your <br />
+            <span>
+              FEROCIOUS <br />
+              <span>INTENSITY?</span>
+            </span>
+          </h1>
+          <p className="FI--text">
+            You thought you knew srs training? We're going to go{" "}
+            <span className="primary-color-accent">FULL THROTTLE</span> with a
+            new ferociously intense workout everyday.
+          </p>
+          <a
+            href="https://www.ferociousintensity.com/"
+            target="_blank"
+            className="button FI--button-lg"
+          >
+            Start Your Free 7-Day Trial
+          </a>
+        </div>
+        <div className="FI--desc-block">
+          <img src={FIPreview} alt="" className="fi--preview-mock" />
+          <div>
+            <h5>Daily Routine:</h5>
+            <ul>
+              <li>$6 /Month</li>
+              <li>$60 /Year</li>
+            </ul>
+          </div>
+          <a
+            href="https://www.ferociousintensity.com/"
+            className="button FI--button-sm"
+          >
+            Start Your Free 7-Day Trial
+          </a>
+        </div>
+      </section>
+
       <section className="pricing-container">
         <h2 className="big-text">
           <span className="primary-color-accent">Single</span> Time, Posing

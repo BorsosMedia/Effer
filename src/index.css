@@ -64,6 +64,7 @@ body::-webkit-scrollbar-thumb {
   max-width: 1409px;
   margin-inline: auto;
   margin-bottom: 4rem;
+  padding: 1rem;
 }
 .plans-container {
   display: grid;
@@ -160,6 +161,7 @@ body::-webkit-scrollbar-thumb {
   font-weight: bold;
   background-color: var(--white-color);
   color: var(--primary-color);
+  border-radius: 0.5rem;
 }
 .one-time-plan--block a:hover {
   background-color: var(--primary-color);
@@ -1147,27 +1149,27 @@ option {
   box-shadow: rgba(211, 52, 52, 0.6) 0px 5px 15px 0px;
 }
 
-.pricing-container:nth-of-type(1) .big-text,
-.pricing-container:nth-of-type(1) .medium-text {
+.pricing-container:nth-of-type(2) .big-text,
+.pricing-container:nth-of-type(2) .medium-text {
   color: var(--background-color);
 }
-.pricing-container:nth-of-type(1) .paragraph-text {
+.pricing-container:nth-of-type(2) .paragraph-text {
   text-align: left;
 }
-.pricing-container:nth-of-type(1) .card-container {
+.pricing-container:nth-of-type(2) .card-container {
   background-color: var(--white-color);
 }
 
-.pricing-container:nth-of-type(1) .button {
+.pricing-container:nth-of-type(2) .button {
   background-color: var(--primary-color) !important;
   color: var(--white-color) !important;
 }
 
-.pricing-container:nth-of-type(1) .card-list {
+.pricing-container:nth-of-type(2) .card-list {
   color: var(--background-color);
 }
-.pricing-container:nth-of-type(1) .card-text-price,
-.pricing-container:nth-of-type(1) {
+.pricing-container:nth-of-type(2) .card-text-price,
+.pricing-container:nth-of-type(2) {
   color: var(--primary-color);
 }
 
@@ -1414,7 +1416,7 @@ option {
   }
   .FI--section-block {
     max-width: initial;
-    margin: 0 auto;
+    margin: 0 auto 4rem auto;
     width: 80%;
     display: grid;
     grid-template-columns: 47% 53%;
@@ -1573,7 +1575,7 @@ option {
   .card-wrapper {
     display: flex;
     justify-content: center;
-    column-gap: 2%;
+    column-gap: 4%;
     width: 80%;
     margin: 0 auto;
     flex-wrap: wrap;
