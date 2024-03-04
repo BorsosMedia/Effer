@@ -227,7 +227,7 @@ function App() {
               <li className="card-list">One-on-one session</li>
               <li className="card-list">Learn how to pose properly</li>
               <li className="card-list">
-                $-minutes session (Better for advanced athletes)
+                20-minutes session (Better for advanced athletes)
               </li>
             </ul>
             <a
