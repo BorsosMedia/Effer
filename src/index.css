@@ -773,6 +773,7 @@ ul li {
 .FI--section-block {
   color: var(--white-color);
   padding: 1rem;
+  margin-bottom: 2rem;
 }
 .FI--section-block > div:first-child {
   display: grid;
