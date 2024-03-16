@@ -40,6 +40,12 @@ const Footer = () => {
           Borsos Media
         </a>
       </p>
+      <p className="paragraph-text txt-lnks">
+        Read our{" "}
+        <a href="https://effercoaching.com/privacy-policy" target="_blank">
+          Privacy Policy
+        </a>
+      </p>
       <p className="paragraph-text">Effer Coaching - All rights reserved</p>
     </footer>
   );
