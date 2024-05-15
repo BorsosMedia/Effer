@@ -92,7 +92,7 @@ const Header = () => {
             <IoCloseOutline onClick={menuAnimation} className="icon" />
           </li>
 
-          <div className="social-media-container">
+          <li className="social-media-container">
             <a href="https://www.instagram.com/johneffer/" target="_blank">
               <div className="icon-sm-container">
                 <AiOutlineInstagram className="icon-svg" />
@@ -107,10 +107,12 @@ const Header = () => {
                 <TbBrandTiktok className="icon-svg" />
               </div>
             </a>
-          </div>
-          <h4 className="medium-text">
-            Stop wasting your time. Join the program…
-          </h4>
+          </li>
+          <li>
+            <h4 className="medium-text">
+              Stop wasting your time. Join the program…
+            </h4>
+          </li>
         </ul>
       </div>
     </div>
