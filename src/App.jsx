@@ -189,7 +189,12 @@ function App() {
           </a>
         </div>
         <div className="FI--desc-block">
-          <img src={FIPreview} alt="" className="fi--preview-mock" />
+          <img
+            src={FIPreview}
+            alt=""
+            className="fi--preview-mock"
+            loading="lazy"
+          />
           <div>
             <h5>Daily Routine:</h5>
             <ul>
@@ -293,6 +298,7 @@ function App() {
               src={johnCollage}
               alt="Collage with photos of John Effer"
               className="john-collage"
+              loading="lazy"
             />
           </div>
         </div>

@@ -5,7 +5,7 @@ import discord from "../media/Icons/discordIcon.svg";
 function DiscordSection() {
   return (
     <section className="discord">
-      <img src={discord} alt="" />
+      <img src={discord} alt="" loading="lazy" />
       <h2 className="big-text">Ready to join the Srs Discord?</h2>
       <h5 className="big-text--subtitle">A very srs community...</h5>
       <p className="hero-paragraph paragraph-text text-discord">

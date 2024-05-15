@@ -501,6 +501,7 @@ ul li {
   height: 100%;
   z-index: 1;
   pointer-events: none;
+  object-fit: cover;
 }
 .header-container {
   background-color: rgba(23, 32, 40, 0.9);
