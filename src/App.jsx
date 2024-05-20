@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState, lazy } from "react";
 import Header from "./components/Header";
 import { IoIosFitness } from "react-icons/io";
 import { AiOutlineShoppingCart } from "react-icons/ai";
@@ -13,11 +13,15 @@ import NormalPlans from "./components/NormalPlans";
 import DiscordSection from "./components/DiscordSection";
 import BlackFriday from "./components/BlackFriday";
 import SpecialSale from "./components/SpecialSale";
-import InstagramWidget from "./components/InstagramWidget";
-import TiktokWidget from "./components/TiktokWidget";
+/* import InstagramWidget from "./components/InstagramWidget";
+import TiktokWidget from "./components/TiktokWidget"; */
 import OnetimePlans from "./components/OnetimePlans";
+const InstagramWidget = lazy(() => import("./components/InstagramWidget"));
+const TiktokWidget = lazy(() => import("./components/TiktokWidget"));
 
 function App() {
+  /*   const InstagramWidget  */
+
   const ref = useRef();
   const handleCTA = () => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
