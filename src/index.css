@@ -1090,8 +1090,6 @@ option {
   margin-bottom: 1rem;
   & div:nth-of-type(5) {
     grid-column: 1/-1;
-    margin-inline: auto;
-    width: 17rem;
   }
 }
 .plan-type-container {
@@ -1329,6 +1327,17 @@ option {
   }
 }
 @media only screen and (min-width: 980px) {
+  .plan-toggle {
+    /*  display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8em;
+    width: 100%;
+    margin-bottom: 1rem; */
+    & div:nth-of-type(5) {
+      margin-inline: auto;
+      width: 17rem;
+    }
+  }
   .nys-block .button {
     display: none !important;
   }
