@@ -127,7 +127,7 @@ body::-webkit-scrollbar-thumb {
 .one-time-plan--block p {
   grid-column: -1/1;
   text-align: center;
-  color: #818891;
+  color: #979797;
   text-wrap: balance;
 }
 .one-time-plan--block ul {
@@ -1014,8 +1014,11 @@ black-friday-wrapper {
   line-height: 1.5rem;
   margin-top: 1rem;
 }
+
 .price-description {
   font-size: initial !important;
+  color: #d33434;
+  letter-spacing: 0.5px;
   font-weight: initial;
 }
 .card-container .medium-text,
@@ -1025,7 +1028,7 @@ black-friday-wrapper {
 }
 
 .card-container .paragraph-text {
-  color: #777777;
+  color: #979797;
   text-align: justify;
 
   /* padding: 0 2rem; */
