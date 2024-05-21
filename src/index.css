@@ -142,6 +142,7 @@ body::-webkit-scrollbar-thumb {
 }
 .one-time-plan--block ul li {
   margin-bottom: 0.5rem;
+  list-style: none;
 }
 .one-time-plan--block h4 {
   font-size: 3.1rem;
@@ -1017,7 +1018,8 @@ black-friday-wrapper {
   font-size: initial !important;
   font-weight: initial;
 }
-.card-container .medium-text {
+.card-container .medium-text,
+.one-time-plan--block h2 {
   font-size: 2.2rem;
   text-align: center;
 }
@@ -1031,7 +1033,7 @@ black-friday-wrapper {
 .card-list {
   font-size: 1.3rem;
   margin-top: 0.5rem;
-
+  text-wrap: balance;
   color: var(--white-color);
 
   list-style: none;
@@ -1088,6 +1090,8 @@ option {
   margin-bottom: 1rem;
   & div:nth-of-type(5) {
     grid-column: 1/-1;
+    margin-inline: auto;
+    width: 17rem;
   }
 }
 .plan-type-container {

@@ -14,7 +14,11 @@ function DiscordSection() {
         unknown heights. You don't want to miss out... very srs,,,
       </p>
 
-      <a href="https://discord.gg/srsbodybuild" target="_blank">
+      <a
+        href="https://discord.gg/srsbodybuild"
+        target="_blank"
+        aria-label="Join Effer Coaching Discord"
+      >
         <button className="button">
           Join now <FiArrowRight className="icon" />
         </button>

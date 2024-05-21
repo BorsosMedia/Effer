@@ -188,6 +188,7 @@ function App() {
             href="https://www.ferociousintensity.com/"
             target="_blank"
             className="button FI--button-lg"
+            aria-label="Join Ferocious Intensity"
           >
             Start Your Free 7-Day Trial
           </a>
@@ -227,7 +228,7 @@ function App() {
 
         <div className="card-wrapper ">
           <div className="card-container posing-card">
-            <h2 className="medium-text">20-minute posing session</h2>
+            <h2 className="medium-text">20-Minute Posing Session</h2>
             {/*    <p className="BF-deal">
               Before <span>$50</span>
             </p> */}
@@ -251,7 +252,7 @@ function App() {
           </div>
 
           <div className="card-container posing-card">
-            <h2 className="medium-text">40-minute posing session</h2>
+            <h2 className="medium-text">40-Minute Posing Session</h2>
             {/*  <p className="BF-deal">
               Before <br />
               <span>$90</span>

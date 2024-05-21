@@ -93,7 +93,11 @@ const Header = () => {
           </li>
 
           <li className="social-media-container">
-            <a href="https://www.instagram.com/johneffer/" target="_blank">
+            <a
+              href="https://www.instagram.com/johneffer/"
+              target="_blank"
+              aria-label="Open Effer Coaching Instagram"
+            >
               <div className="icon-sm-container">
                 <AiOutlineInstagram className="icon-svg" />
               </div>
@@ -102,6 +106,7 @@ const Header = () => {
             <a
               href="https://www.tiktok.com/@johneffer?_t=8XbYgUfs5cT&_r=1"
               target="_blank"
+              aria-label="Open Effer Coaching Tik Tok"
             >
               <div className="icon-sm-container">
                 <TbBrandTiktok className="icon-svg" />
