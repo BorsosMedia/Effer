@@ -94,8 +94,8 @@ const NormalPlans = ({ TypeOfPlan }) => {
           TypeOfPlan === "c"
             ? "card-hidden"
             : TypeOfPlan == "b"
-            ? "card-container card-offer-active"
-            : "card-container"
+            ? "card-hidden"
+            : "card-container "
         }
       >
         {/* {TypeOfPlan == "b" && <div className="item-price">20% OFF!</div>} */}
