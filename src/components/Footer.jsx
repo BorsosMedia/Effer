@@ -52,7 +52,7 @@ const Footer = () => {
       <p className="paragraph-text txt-lnks">
         Read our{" "}
         <a
-          href="https://effercoaching.com/privacy-policy"
+          href="https://coaching.effercoaching.com/privacy-policy"
           target="_blank"
           aria-label="Read Effer Coaching privacy policy"
         >

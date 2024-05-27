@@ -26,7 +26,7 @@ function OnetimePlans() {
             <li>Tremendous results</li>
           </ul>
           <a
-            href="https://effercoaching.com/one-time-meal-plan"
+            href="https://coaching.effercoaching.com/one-time-meal-plan"
             target="_blank"
             className="button"
           >
@@ -47,7 +47,7 @@ function OnetimePlans() {
             <li>Tremendous results</li>
           </ul>
           <a
-            href="https://effercoaching.com/one-time-training-plan"
+            href="https://coaching.effercoaching.com/one-time-training-plan"
             target="_blank"
             className="button"
           >
@@ -69,7 +69,7 @@ function OnetimePlans() {
             <li>Tremendous results</li>
           </ul>
           <a
-            href="https://effercoaching.com/one-time-training-and-meal-plan"
+            href="https://coaching.effercoaching.com/one-time-training-and-meal-plan"
             target="_blank"
             className="button"
           >

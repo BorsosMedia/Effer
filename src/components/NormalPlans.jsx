@@ -72,13 +72,13 @@ const NormalPlans = ({ TypeOfPlan }) => {
             href={(() => {
               switch (TypeOfPlan) {
                 case "a":
-                  return "https://effercoaching.com/normie-monthly";
+                  return "https://coaching.effercoaching.com/normie-monthly";
                 case "b":
-                  return "https://effercoaching.com/normie-3-months";
+                  return "https://coaching.effercoaching.com/normie-3-months";
                 case "d":
-                  return "https://effercoaching.com/normie-6-months";
+                  return "https://coaching.effercoaching.com/normie-6-months";
                 case "e":
-                  return "https://effercoaching.com/normie-annual";
+                  return "https://coaching.effercoaching.com/normie-annual";
               }
             })()}
           >
@@ -175,13 +175,13 @@ const NormalPlans = ({ TypeOfPlan }) => {
           href={(() => {
             switch (TypeOfPlan) {
               case "a":
-                return "https://effercoaching.com/ascending-monthly";
+                return "https://coaching.effercoaching.com/ascending-monthly";
               case "b":
-                return "https://effercoaching.com/ascending-3-month";
+                return "https://coaching.effercoaching.com/ascending-3-month";
               case "d":
-                return "https://effercoaching.com/ascending-6-month";
+                return "https://coaching.effercoaching.com/ascending-6-month";
               case "e":
-                return "https://effercoaching.com/ascending-annual";
+                return "https://coaching.effercoaching.com/ascending-annual";
             }
           })()}
         >
@@ -281,13 +281,13 @@ const NormalPlans = ({ TypeOfPlan }) => {
           href={(() => {
             switch (TypeOfPlan) {
               case "a":
-                return "https://effercoaching.com/srs-bodybuild-monthly";
+                return "https://coaching.effercoaching.com/srs-bodybuild-monthly";
               case "b":
-                return "https://effercoaching.com/srs-bodybuild-3-months";
+                return "https://coaching.effercoaching.com/srs-bodybuild-3-months";
               case "d":
-                return "https://effercoaching.com/srs-bodybuild-6-months";
+                return "https://coaching.effercoaching.com/srs-bodybuild-6-months";
               case "e":
-                return "https://effercoaching.com/srs-bodybuild-annual";
+                return "https://coaching.effercoaching.com/srs-bodybuild-annual";
             }
           })()}
         >
@@ -319,7 +319,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
           <a
             target="_blank"
             className="purchase-button-link"
-            href="https://effercoaching.com/16-week-contest-prep"
+            href="https://coaching.effercoaching.com/16-week-contest-prep"
           >
             <button className="button">
               <AiOutlineShoppingCart className="icon" /> Purchase
