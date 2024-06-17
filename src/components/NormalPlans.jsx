@@ -3,99 +3,95 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 const NormalPlans = ({ TypeOfPlan }) => {
   return (
     <div className={TypeOfPlan === "bf" ? "card-hidden" : "card-wrapper"}>
-      {TypeOfPlan === "b" ? null : (
-        <div
-          className={
-            TypeOfPlan === "c"
-              ? "card-hidden"
-              : TypeOfPlan == "b"
-              ? "card-container card-offer-active"
-              : "card-container"
-          }
+      <div
+        className={
+          TypeOfPlan === "c"
+            ? "card-hidden"
+            : TypeOfPlan == "b"
+            ? "card-container card-offer-active"
+            : "card-container"
+        }
+      >
+        {/*  {TypeOfPlan == "b" && <div className="item-price">20% OFF!</div>} */}
+        {TypeOfPlan == "b" && <div className="item-price">20% OFF!</div>}
+        <h2
+          className={TypeOfPlan == "b" ? "medium-text text-act" : "medium-text"}
         >
-          {/*  {TypeOfPlan == "b" && <div className="item-price">20% OFF!</div>} */}
-          {TypeOfPlan == "b" && <div className="item-price">20% OFF!</div>}
-          <h2
-            className={
-              TypeOfPlan == "b" ? "medium-text text-act" : "medium-text"
-            }
-          >
-            Normie
-          </h2>
+          Normie
+        </h2>
 
-          <p className="paragraph-text">
-            Custom programming in the most affordable way possible
+        <p className="paragraph-text">
+          Custom programming in the most affordable way possible
+        </p>
+        {TypeOfPlan == "b" && (
+          <p className="summer-prg">
+            Before <span className="summer-offer">$300</span>
           </p>
-          {TypeOfPlan == "b" && (
-            <p className="summer-prg">
-              Before <span className="summer-offer">$300</span>
-            </p>
-          )}
+        )}
 
-          <h4 className="card-text-price">
+        <h4 className="card-text-price">
+          {(() => {
+            switch (TypeOfPlan) {
+              case "a":
+                return "$100 ";
+              case "b":
+                return "$240 ";
+
+              case "d":
+                return "$600 ";
+              case "e":
+                return "$1200 ";
+            }
+          })()}
+          <span className="price-description">
             {(() => {
               switch (TypeOfPlan) {
                 case "a":
-                  return "$100 ";
+                  return "/month";
                 case "b":
-                  return "$240 ";
-
+                  return "/3 months";
                 case "d":
-                  return "$600 ";
+                  return "/6 months";
                 case "e":
-                  return "$1200 ";
+                  return "/year";
               }
             })()}
-            <span className="price-description">
-              {(() => {
-                switch (TypeOfPlan) {
-                  case "a":
-                    return "/month";
-                  case "b":
-                    return "/3 months";
-                  case "d":
-                    return "/6 months";
-                  case "e":
-                    return "/year";
-                }
-              })()}
-            </span>
-          </h4>
-          <ul>
-            <li className="card-list">Custom workout regimen and diet</li>
-            <li className="card-list">Bi-weekly programming tweaks</li>
-            <li className="card-list">E-mail me directly</li>
-          </ul>
-          <a
-            target="_blank"
-            className="purchase-button-link"
-            href={(() => {
-              switch (TypeOfPlan) {
-                case "a":
-                  return "https://coaching.effercoaching.com/normie-monthly";
-                case "b":
-                  return "https://coaching.effercoaching.com/normie-3-months";
-                case "d":
-                  return "https://coaching.effercoaching.com/normie-6-months";
-                case "e":
-                  return "https://coaching.effercoaching.com/normie-annual";
-              }
-            })()}
-          >
-            <button className="button">
-              <AiOutlineShoppingCart className="icon" /> Purchase
-            </button>
-          </a>
-        </div>
-      )}
+          </span>
+        </h4>
+        <ul>
+          <li className="card-list">Custom workout regimen and diet</li>
+          <li className="card-list">Bi-weekly programming tweaks</li>
+          <li className="card-list">E-mail me directly</li>
+        </ul>
+        <a
+          target="_blank"
+          className="purchase-button-link"
+          href={(() => {
+            switch (TypeOfPlan) {
+              case "a":
+                return "https://coaching.effercoaching.com/normie-monthly";
+              case "b":
+                return "https://coaching.effercoaching.com/normie-3-months";
+              case "d":
+                return "https://coaching.effercoaching.com/normie-6-months";
+              case "e":
+                return "https://coaching.effercoaching.com/normie-annual";
+            }
+          })()}
+        >
+          <button className="button">
+            <AiOutlineShoppingCart className="icon" /> Purchase
+          </button>
+        </a>
+      </div>
 
       <div
         className={
           TypeOfPlan === "c"
             ? "card-hidden"
             : TypeOfPlan == "b"
-            ? "card-hidden"
-            : "card-container "
+            ? "card-container card-offer-active"
+            : "card-container"
         }
       >
         {/* {TypeOfPlan == "b" && <div className="item-price">20% OFF!</div>} */}
