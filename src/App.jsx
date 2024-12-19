@@ -12,10 +12,8 @@ import maskGroup from "./media/mask-group.png";
 import NormalPlans from "./components/NormalPlans";
 import DiscordSection from "./components/DiscordSection";
 import BlackFriday from "./components/BlackFriday";
-import SpecialSale from "./components/SpecialSale";
-/* import InstagramWidget from "./components/InstagramWidget";
-import TiktokWidget from "./components/TiktokWidget"; */
 import OnetimePlans from "./components/OnetimePlans";
+
 const InstagramWidget = lazy(() => import("./components/InstagramWidget"));
 const TiktokWidget = lazy(() => import("./components/TiktokWidget"));
 
@@ -43,7 +41,7 @@ function App() {
   */
 
   /* Hacer un justify content abajo del boton de CTA con lo que ofrece John */
-  const [TypeOfPlan, setTypeOfPlan] = useState("b");
+  const [TypeOfPlan, setTypeOfPlan] = useState("f");
 
   return (
     <div className="App">
@@ -55,19 +53,26 @@ function App() {
         <img src={maskGroup} className="maskImg" alt="" />
         <div className="hero-container">
           <div className="hero-text">
+            <p className="paragraph-text hero-paragraph">
+              <span className="primary-color-accent">IFBB</span> Pro
+            </p>
             <h1 className="heading-text">
-              Srs <span>Sale</span>
-              <br />
-              3-Month Plans
-              <br />
-              <span>20% OFF!</span>
+              The biggest sale <br />
+              I'm <span className="primary-color-accent">
+                ever
+              </span> running <br />
+              and <span className="primary-color-accent">never</span> doing
+              again.
             </h1>
+            <p className="paragraph-text hero-paragraph">
+              Sale Ends on Jan. 7th... srs
+            </p>
             {/*  <p>
               EVERYTHING at half price until <span>Nov. 2nd</span>
             </p> */}
             <button onClick={handleCTA} className="button">
               <IoIosFitness className="icon" />
-              Go Now
+              Right nah?
             </button>
           </div>
         </div>
@@ -109,6 +114,16 @@ function App() {
             <TbChristmasTree className="icon" />
             <h4 className="medium-text">New Year's Deal</h4>
           </div> */}
+          <div
+            className={
+              TypeOfPlan === "f"
+                ? "plan-type-container nys-offer-button color-accent"
+                : "plan-type-container nys-offer-button"
+            }
+            onClick={() => setTypeOfPlan("f")}
+          >
+            <h4 className="medium-text">Effer’s Last Sale Ever</h4>
+          </div>
           <div
             className={
               TypeOfPlan === "a"
