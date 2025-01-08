@@ -65,7 +65,7 @@ function App() {
               again.
             </h1>
             <p className="paragraph-text hero-paragraph">
-              Sale Ends on Jan. 7th... srs
+              Sale Ends on Jan. 31st... srs
             </p>
             {/*  <p>
               EVERYTHING at half price until <span>Nov. 2nd</span>
