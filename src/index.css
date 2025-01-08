@@ -829,7 +829,7 @@ ul li {
 }
 .FI--section-block h1 span {
   font-weight: 800;
-  font-size: 4.8rem;
+  font-size: 4.4rem;
   letter-spacing: 3.5px;
   line-height: 90%;
 }
@@ -1215,25 +1215,24 @@ option {
   box-shadow: rgba(211, 52, 52, 0.2) 0px 5px 15px 0px;
 }
 
-.pricing-container:nth-of-type(2) .big-text,
-.pricing-container:nth-of-type(2) .medium-text {
+/* .pricing-container:nth-of-type(2) .medium-text {
   color: var(--background-color);
-}
+} */
 .pricing-container:nth-of-type(2) .paragraph-text {
   text-align: left;
 }
-.pricing-container:nth-of-type(2) .card-container {
+/* .pricing-container:nth-of-type(2) .card-container {
   background-color: var(--white-color);
 }
-
-.pricing-container:nth-of-type(2) .button {
+ */
+/* .pricing-container:nth-of-type(2) .button {
   background-color: var(--primary-color) !important;
   color: var(--white-color) !important;
-}
+} */
 
-.pricing-container:nth-of-type(2) .card-list {
+/* .pricing-container:nth-of-type(2) .card-list {
   color: var(--background-color);
-}
+} */
 .pricing-container:nth-of-type(2) .card-text-price,
 .pricing-container:nth-of-type(2) {
   color: var(--primary-color);
@@ -1388,6 +1387,9 @@ option {
   }
 }
 @media only screen and (min-width: 980px) {
+  .FI--section-block h1 span {
+    font-size: 4.8rem;
+  }
   .hero-section {
     min-height: 800px;
   }
