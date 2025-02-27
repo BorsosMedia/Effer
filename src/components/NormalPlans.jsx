@@ -89,14 +89,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
       </div>
 
       {!isCardHidden("Normie") && (
-        <div
-          className={
-            TypeOfPlan === "b"
-              ? "card-container card-offer-active"
-              : "card-container"
-          }
-        >
-          {TypeOfPlan === "b" && <div className="item-price">20% OFF!</div>}
+        <div className="card-container">
           <h2
             className={
               TypeOfPlan === "b" ? "medium-text text-act" : "medium-text"
@@ -116,7 +109,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
             {(() => {
               switch (TypeOfPlan) {
                 case "a":
-                  return "$100 ";
+                  return "$150 ";
                 case "b":
                   return "$240 ";
                 case "d":
@@ -175,15 +168,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
       )}
 
       {!isCardHidden("Ascending") && (
-        <div
-          className={
-            TypeOfPlan === "b"
-              ? "card-container card-offer-active"
-              : "card-container"
-          }
-        >
-          {TypeOfPlan == "b" && <div className="item-price">20% OFF!</div>}
-
+        <div className="card-container">
           <h2
             className={
               TypeOfPlan == "b" ? "medium-text text-act" : "medium-text"
@@ -224,7 +209,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
             {(() => {
               switch (TypeOfPlan) {
                 case "a":
-                  return "$200 ";
+                  return "$250 ";
                 case "b":
                   return "$440 ";
 
@@ -331,7 +316,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
             {(() => {
               switch (TypeOfPlan) {
                 case "a":
-                  return "$275 ";
+                  return "$300 ";
                 case "b":
                   return "$600 ";
                 case "d":

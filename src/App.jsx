@@ -24,24 +24,8 @@ function App() {
   const handleCTA = () => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
-  /* las personas que entren al website ya sabran de el, tendran informacion previa sobre lo 
-  que hace, 2 step order form
-  
-  Normie, bronze
-  Serious, silver
-  Bodybuild, gold
 
-  Foto de el en el medio
-  Solo un hero y los planes debajo de el
-  Alrededor del hero (imagen de el) 
-
-  CAMBIAR LOS MESES MONTH
-  Get started en mayusculas y subirle la fuente
-
-  */
-
-  /* Hacer un justify content abajo del boton de CTA con lo que ofrece John */
-  const [TypeOfPlan, setTypeOfPlan] = useState("f");
+  const [TypeOfPlan, setTypeOfPlan] = useState("a");
 
   return (
     <div className="App">
@@ -57,16 +41,14 @@ function App() {
               <span className="primary-color-accent">IFBB</span> Pro
             </p>
             <h1 className="heading-text">
-              The biggest sale <br />
-              I'm <span className="primary-color-accent">
-                ever
-              </span> running <br />
-              and <span className="primary-color-accent">never</span> doing
-              again.
+              <h1 className="heading-text">
+                It’s Time <br />
+                To Get <span className="primary-color-accent">Srs</span>
+              </h1>
             </h1>
-            <p className="paragraph-text hero-paragraph">
+            {/*     <p className="paragraph-text hero-paragraph">
               Sale Ends on Jan. 31st... srs
-            </p>
+            </p> */}
             {/*  <p>
               EVERYTHING at half price until <span>Nov. 2nd</span>
             </p> */}
@@ -158,7 +140,7 @@ function App() {
             <TbChristmasTree className="icon" />
             <h4 className="medium-text">New Year's Deal</h4>
           </div> */}
-          <div
+          {/*       <div
             className={
               TypeOfPlan === "f"
                 ? "plan-type-container nys-offer-button color-accent"
@@ -167,7 +149,7 @@ function App() {
             onClick={() => setTypeOfPlan("f")}
           >
             <h4 className="medium-text">Effer’s Last Sale Ever</h4>
-          </div>
+          </div> */}
           <div
             className={
               TypeOfPlan === "a"

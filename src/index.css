@@ -590,6 +590,9 @@ ul li {
   z-index: 2;
 }
 
+.menu-container li {
+  list-style: none;
+}
 .menu-active {
   bottom: 0;
   left: 0;
@@ -1130,11 +1133,14 @@ option {
   display: none !important;
 }
 .plan-toggle {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  /*   display: grid;
+  grid-template-columns: repeat(4, 1fr); */
+  display: flex;
+  flex-direction: row;
   gap: 0.8em;
   width: 100%;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
   & h4 {
     font-size: 0.8rem;
   }
@@ -1387,6 +1393,9 @@ option {
   }
 }
 @media only screen and (min-width: 980px) {
+  .menu-container li:nth-of-type(3) {
+    display: none;
+  }
   .FI--section-block h1 span {
     font-size: 4.8rem;
   }
@@ -1410,19 +1419,6 @@ option {
     margin-bottom: 1rem; */
     & h4 {
       font-size: initial;
-    }
-    & div:nth-of-type(1) {
-      grid-column: 2/3;
-      grid-row: 2/3;
-    }
-    & div:nth-of-type(5),
-    & div:nth-of-type(6) {
-      margin-inline: auto;
-      width: 17rem;
-    }
-    & div:nth-of-type(6) {
-      grid-column: 3/4;
-      grid-row: 2/2;
     }
   }
   .nys-block .button {
@@ -1656,6 +1652,7 @@ option {
   .menu-container .social-media-container {
     margin-top: 0;
     justify-content: flex-end;
+    padding: 0;
   }
   .menu-container {
     height: inherit;
@@ -1667,6 +1664,7 @@ option {
     gap: 5vh;
     top: 0;
     right: 0;
+    padding: 0;
     transition: 0s;
     left: 0;
   }
