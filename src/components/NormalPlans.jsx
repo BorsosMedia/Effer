@@ -100,22 +100,18 @@ const NormalPlans = ({ TypeOfPlan }) => {
           <p className="paragraph-text">
             Custom programming in the most affordable way possible
           </p>
-          {TypeOfPlan === "b" && (
-            <p className="summer-prg">
-              Before <span className="summer-offer">$300</span>
-            </p>
-          )}
+
           <h4 className="card-text-price">
             {(() => {
               switch (TypeOfPlan) {
                 case "a":
                   return "$150 ";
                 case "b":
-                  return "$240 ";
+                  return "$450 ";
                 case "d":
-                  return "$600 ";
+                  return "$900 ";
                 case "e":
-                  return "$1200 ";
+                  return "$1800 ";
                 default:
                   return "";
               }
@@ -180,43 +176,17 @@ const NormalPlans = ({ TypeOfPlan }) => {
             Custom programming with constant feedback and more tweaks
           </p>
 
-          {(() => {
-            switch (TypeOfPlan) {
-              case "a":
-                return null;
-              case "b":
-                return (
-                  <p className="summer-prg">
-                    Before <span className="summer-offer">$550</span>
-                  </p>
-                );
-              case "d":
-                return (
-                  <p className="summer-prg">
-                    Before <span className="summer-offer">$1200</span>
-                  </p>
-                );
-              case "e":
-                return (
-                  <p className="summer-prg">
-                    Before <span className="summer-offer">$2400</span>
-                  </p>
-                );
-            }
-          })()}
-
           <h4 className="card-text-price">
             {(() => {
               switch (TypeOfPlan) {
                 case "a":
                   return "$250 ";
                 case "b":
-                  return "$440 ";
-
+                  return "$750 ";
                 case "d":
-                  return "$1000 ";
+                  return "$1500 ";
                 case "e":
-                  return "$1950 ";
+                  return "$3000 ";
               }
             })()}
             <span className="price-description">
@@ -286,23 +256,24 @@ const NormalPlans = ({ TypeOfPlan }) => {
           {(() => {
             switch (TypeOfPlan) {
               case "a":
-                return null;
+                null;
               case "b":
                 return (
                   <p className="summer-prg">
-                    Before <span className="summer-offer">$750</span>
+                    Before <span className="summer-offer">$900</span>
                   </p>
                 );
+
               case "d":
                 return (
                   <p className="summer-prg">
-                    Before <span className="summer-offer">$1650</span>
+                    Before <span className="summer-offer">$1800</span>
                   </p>
                 );
               case "e":
                 return (
                   <p className="summer-prg">
-                    Before <span className="summer-offer">$3300</span>
+                    Before <span className="summer-offer">$3600</span>
                   </p>
                 );
             }
@@ -318,11 +289,11 @@ const NormalPlans = ({ TypeOfPlan }) => {
                 case "a":
                   return "$300 ";
                 case "b":
-                  return "$600 ";
+                  return "$765 ";
                 case "d":
-                  return "$1450 ";
+                  return "$1530 ";
                 case "e":
-                  return "$2550 ";
+                  return "$3060 ";
               }
             })()}
             <span className="price-description">
@@ -379,7 +350,7 @@ const NormalPlans = ({ TypeOfPlan }) => {
             Custom programming in the most affordable way possible
           </p>
           <h4 className="card-text-price">
-            $900 <span className="price-description">/16-weeks</span>
+            $1200 <span className="price-description">/16-weeks</span>
           </h4>
           <ul>
             <li className="card-list">Custom workout regimen and diet</li>
